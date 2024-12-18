@@ -1,5 +1,18 @@
-.cabecera{
+header{
     background-color: black;
     color: white;
     text-align: right;
+}
+
+body{
+    background-color: rgb(128, 112, 24);
+    text-align: center;
+    font-family: monospace;
+}
+
+.boton{
+    background-color: black;
+    color: beige;
+    border-radius: 2px;
+
 }

@@ -2,8 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
 }
+
+.anton-regular {
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+}  
 
 body {
     background-color: bisque;
@@ -52,6 +57,8 @@ body {
     font-weight: 400;
     font-size: 22px;
     margin-left: 10px;
+    font-family: "Anton", serif;
+    letter-spacing: 1px;
 }
 
 .container .menu {
@@ -69,6 +76,8 @@ body {
     border-bottom: 2px solid transparent;
     font-size: 15px;
     margin-right: 5px;
+    font-family: "Anton", serif;
+    letter-spacing: 1px;
 }
 
 .container .menu a:hover {
@@ -92,6 +101,7 @@ body {
     transition: all 500ms ease;
     opacity: 0;
     visibility: hidden;
+    
 }
 
 #btn-menu:checked ~ .container-menu {
@@ -123,6 +133,8 @@ body {
     color: #c7c7c7;
     border-left: 5px solid transparent;
     transition: all 400ms ease;
+    font-family: "Anton", serif;
+    letter-spacing: 1px;
 }
 
 .cont-menu nav a:hover {
@@ -139,73 +151,3 @@ body {
     font-size: 18px;
 }
 
-/* configuracion banner */
-
-.banner{
-    width: 100%;
-    height: 800px;
-    animation: banner 10s infinite linear alternate;
-    background-size: 100% 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 100px;
-}
-
-@keyframes banner{
-    10%, 50%{
-       background-image: url(../fotos/banner.png); 
-    }
-
-    55%, 100%{
-        background-image: url(../fotos/banner2.png); 
-     }
-}
-
-.capa-banner{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.6);
-}
-
-/*texto banner*/
-
-.info{
-    position: absolute;
-    align-items: center;
-    z-index: 1;
-    width: 100%;
-    right: 70%;
-    left: 30%;
-    top: 40%;
-    bottom: 60%;
-    max-width: 550px;
-    text-align: center;
-    color: #fff;
-}
-
-.info h1{
-    color: #fff;
-    font-size: 45px;
-    margin-bottom: 0px;
-    letter-spacing: 1px;
-}
-
-.info p{
-    color: #c7c7c7;
-    line-height: 1.7;
-    margin-bottom: 0px;
-}
-
-.info a{
-    color: #fff;
-    text-decoration: none;
-    background-color: #3088e0;
-    padding: 16px 37px;
-    display: inline-block;
-    border-radius: 50px;
-}

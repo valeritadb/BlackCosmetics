@@ -4,11 +4,21 @@
     box-sizing: border-box;
 }
 
+/*fuentes*/
 .anton-regular {
     font-family: "Anton", serif;
     font-weight: 400;
     font-style: normal;
 }  
+
+
+.quicksand {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+/*-------------------*/
 
 body {
     background-color: bisque;
@@ -133,7 +143,7 @@ body {
     color: #c7c7c7;
     border-left: 5px solid transparent;
     transition: all 400ms ease;
-    font-family: "Anton", serif;
+    font-family: "Quicksand", serif;
     letter-spacing: 1px;
 }
 

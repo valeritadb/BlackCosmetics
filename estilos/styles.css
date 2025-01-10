@@ -138,9 +138,17 @@ body {
     letter-spacing: 1px;
 }
 
+.menu button{
+    padding: 0;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 17px;
+    width: 100%;
+}
+
 .container .menu a:hover {
-    border-bottom: 2px solid bisque;
-    padding-bottom: 5px;
+   /* border-bottom: 2px solid bisque;*/
+    padding-bottom: 3px;
     color: bisque;
 
 }

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: black;
 }
 
 /*fuentes*/
@@ -29,48 +30,6 @@ body {
     display: flex;
 }
 
-/*----FONDO DESLIZANTE---*/
-
-.slider{
-    margin: 0;
-    margin-top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.slider ul{
-    display: flex;
-    animation: cambio 20s infinite alternate linear;
-    width: 400%;
-}
-
-.slider li{
-    width: 100%;
-    height: 100%;
-    list-style: none;
-
-}
-
-.slider image{
-    width: 100%;
-    height: 100%;
-}
-
-@keyframes cambio {
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
-
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-
-    75%{margin-left: -300%}
-    100%{margin-left: -300%;}
-}
-
 /*-------------------------------*/
 
 .capa {
@@ -85,7 +44,7 @@ body {
 
 /*estilo del header*/
 .header {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: black;
     width: 100%;
     height: 100px;
     position: fixed;
@@ -133,13 +92,10 @@ body {
     text-decoration: none;
     color: #fff;
     transition: all 0.3s ease;
-    /*border-bottom: 5px solid transparent;
-    border-left: 5px solid transparent;*/
-    border: 3px solid white;
-    border-radius: 30px;
+    border-bottom: 5px solid transparent;
     font-size: 15px;
     margin-right: 5px;
-    font-family: "Anton", serif;
+    font-family: "Quicksand", serif;
     letter-spacing: 2px;
 }
 
@@ -154,11 +110,9 @@ body {
 
 .container .menu a:hover {
 
-    /*border-left: 5px solid bisque;
-    border-bottom: 5px solid bisque;*/
-    border: 3px solid rgb(205, 159, 103);
+    border-bottom: 3px solid #c6937f;
     padding-bottom: 5px;
-    color: rgb(205, 159, 103);
+    color: #c6937f;
 
 }
 
@@ -167,6 +121,7 @@ body {
 #btn-menu{
     display: none;
 }
+
 
 .container-menu{
     position: absolute;
@@ -189,7 +144,7 @@ body {
 .cont-menu {
     width: 100%;
     max-width: 250px;
-    background: #1f1f1f ;
+    background: black ;
     height: 100vh;
     position: relative;
     transition: translateX(-100%);
@@ -208,7 +163,6 @@ body {
     text-decoration: none;
     padding: 20px;
     color: #c7c7c7;
-    border-left: 5px solid transparent;
     border-bottom: 5px solid transparent;
     transition: all 400ms ease;
     font-family: "Quicksand", serif;
@@ -216,9 +170,9 @@ body {
 }
 
 .cont-menu nav a:hover {
-    border-bottom: 5px solid #c7c7c7;
-    border-left: 5px solid #c7c7c7;
-    background: #1f1f1f;
+    border-bottom: 3px solid #c7c7c7;
+    background: #c3c3c3;
+    color: black;
 }
 
 .cont-menu label {

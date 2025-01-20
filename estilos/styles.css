@@ -61,7 +61,7 @@ body {
 
 .container .btn-menu, .logo {
     float: left;
-    line-height: 100px;
+    line-height: 90px;
 }
 
 .container .btn-menu label {
@@ -70,7 +70,14 @@ body {
     cursor: pointer;
 }
 
-.logo h1 {
+.logo img{
+    width: 100px;
+    height: 40px;
+    float: left;
+    margin-top: 28px;
+}
+
+/*.logo h1 {
     color: #fff;
     font-weight: 400;
     font-size: 22px;
@@ -78,7 +85,8 @@ body {
     font-family: "Anton", serif;
     letter-spacing: 1px;
     cursor: default;
-}
+}*/
+
 
 .container .menu {
     float: right;

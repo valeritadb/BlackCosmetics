@@ -128,15 +128,23 @@ body {
 /*------MAIN-----------*/
 
 main { /*main en general*/
-    margin: auto;
+    align-items: center;
 }
 
-main section p { /*parrafos dentros de secciones*/
-    color: white;
+main section img{ /*img dentro del section*/
+
+
+    height: auto;
+    width: 100%;
+
 }
 
-main aside p { /*parrafos dentro de asides*/
-    color: white;
+main aside img { /*img dentro del aside*/
+    
+    float: right;
+    width: 250px;
+    height: auto;
+
 }
 
 #Titulo{

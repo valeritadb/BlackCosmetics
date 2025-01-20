@@ -166,7 +166,7 @@ main aside p { /*parrafos dentro de asides*/
     position: absolute;
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
-    height: auto;
+    height: 100vh;
     top: 0;
     left: 0;
     transition: all 500ms ease;
@@ -185,7 +185,7 @@ main aside p { /*parrafos dentro de asides*/
     max-width: 250px;
     background: black ;
     height: 100vh;
-    position: absolute;
+    position: relative;
     transition: translateX(-100%);
 }
 

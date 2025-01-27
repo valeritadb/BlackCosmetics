@@ -22,6 +22,7 @@
 /*-------------------------------*/
 
 body {
+
     margin: 0;
     padding: 0;
     font-family: "Quicksand", serif;
@@ -134,21 +135,25 @@ body {
 /*------MAIN-----------*/
 
 main { /*main en general*/
-    margin-top: auto;
+    margin-top: 115px;
+    align-items: center;
+}
+
+#Titulo{
+
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Anton', serif;
+    letter-spacing: 2px;
 
 }
 
-main h2 { /*titulos del main*/
-margin-top: auto;
-text-align: center;
+.foto_index{ /*img dentro del section*/
 
-}
-
-main section{ /*img dentro del section*/
-
-    
+    align-content: center;
     height: auto;
-    width: 300px;
+    width: auto;
 
 }
 
@@ -160,23 +165,7 @@ main aside { /*img dentro del aside*/
     height: auto;
 
 }
-
-#Titulo{
-    color: white;
-    z-index: 2;
-    font-size: 50px;
-    text-align: center;
-}
-
-.foto_index{
-    margin: 10%;
-    width: 90%;
-    height: 90%;
-}
-
 /*----------------------------------------------------*/
-
-
 /*----------------MENU LATERAL-----------------------*/
 
 #btn-menu{

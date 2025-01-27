@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
+    background-color: #c6937f;
 }
 
 /*----------FUENTES-----------------*/
@@ -31,21 +31,21 @@ body {
 
 /*-------------------------------*/
 
-.capa {
+/*.capa {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.5) ;
+    background: rgba(0, 0, 0, 0.5);
     z-index: -2;
     top: 0;
     left: 0;
-}
+}*/
 
 /*-------------------------------*/
 
 /*------------HEADER------------------*/
 .header {
-    background-color: black;
+    background-color: #72252b;
     width: 100%;
     height: 100px;
     position: absolute;
@@ -62,19 +62,22 @@ body {
 .container .btn-menu, .logo {
     float: left;
     line-height: 90px;
+    background-color: #72252b;
 }
 
 .container .btn-menu label {
     color: #fff;
     font-size: 25px;
     cursor: pointer;
+    background-color: #72252b;
 }
 
 .logo img{
-    width: 100px;
-    height: 40px;
+    width: 100%;
+    height: 90%;
     float: left;
-    margin-top: 28px;
+    margin-top: 25px;
+    background-color: #72252b;
 }
 
 /*.logo h1 {
@@ -91,6 +94,7 @@ body {
 .container .menu {
     float: right;
     line-height: 100px;
+    background-color: #72252b;
 }
 
 .container .menu a {
@@ -106,16 +110,18 @@ body {
     margin-right: 5px;
     font-family: "Quicksand", serif;
     letter-spacing: 2px;
+    background-color: #72252b;
 }
 
-/*.menu button{
+.menu button{
 
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #72252b;
     box-sizing: 30px;
     text-align: center;
     align-items: center;
-}*/
+
+}
 
 .container .menu a:hover {
 
@@ -128,21 +134,29 @@ body {
 /*------MAIN-----------*/
 
 main { /*main en general*/
-    
+    margin-top: auto;
+
 }
 
-main section img{ /*img dentro del section*/
+main h2 { /*titulos del main*/
+margin-top: auto;
+text-align: center;
 
+}
 
+main section{ /*img dentro del section*/
+
+    
     height: auto;
-    width: 100%;
+    width: 300px;
 
 }
 
-main aside img { /*img dentro del aside*/
+main aside { /*img dentro del aside*/
     
+    width: 300px;
     float: right;
-    width: 250px;
+    width: auto;
     height: auto;
 
 }
@@ -167,6 +181,7 @@ main aside img { /*img dentro del aside*/
 
 #btn-menu{
     display: none;
+    background-color:#72252b;
 }
 
 
@@ -191,7 +206,7 @@ main aside img { /*img dentro del aside*/
 .cont-menu {
     width: 100%;
     max-width: 250px;
-    background: black ;
+    background: #72252b;
     height: 100vh;
     position: relative;
     transition: translateX(-100%);
@@ -206,6 +221,7 @@ main aside img { /*img dentro del aside*/
 }
 
 .cont-menu nav a {
+    background-color: #72252b;
     display: block;
     text-decoration: none;
     padding: 20px;

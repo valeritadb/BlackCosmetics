@@ -2,7 +2,6 @@
     
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
 }
 
 /*----------FUENTES-----------------*/
@@ -23,14 +22,12 @@
 
 body {
 
-    
+    margin: auto;
     padding: 0;
-    font-family: "Quicksand", serif;
     height: 100vh;
     display: flex;
-    align-items: center;
-    
 }
+
 
 /*-------------------------------*/
 
@@ -51,7 +48,7 @@ body {
     background-color: black;
     width: 100%;
     height: 100px;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
 }
@@ -138,35 +135,24 @@ body {
 
 main { /*main en general*/
     margin-top: 115px;
-    align-items: center;
 }
 
-#Titulo{
+#Titulo { /*TITULO MAIN INDEX*/
 
-    color: white;
-    font-size: 50px;
-    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
     font-family: 'Anton', serif;
     letter-spacing: 2px;
-    margin-left: 50%;
-
+    margin-top: auto;
+    text-align: center;
 }
 
-.foto_index{ /*img dentro del section*/
-
-    height: auto;
-    width: auto;
-
+main p {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
 }
 
-main aside { /*img dentro del aside*/
-    
-    width: 300px;
-    float: right;
-    width: auto;
-    height: auto;
-
-}
 /*----------------------------------------------------*/
 /*----------------MENU LATERAL-----------------------*/
 

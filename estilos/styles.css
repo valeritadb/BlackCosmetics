@@ -144,16 +144,23 @@ main { /*main en general*/
     color: white;
     font-size: 30px;
     font-family: 'Anton', serif;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     margin-top: auto;
     text-align: center;
 }
 
 #BannerIndex{
+    
     width: 1510px;
     height: auto;
     border-radius: 10px;
 
+}
+
+.fotosModelo img{
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
 }
 
 main p {

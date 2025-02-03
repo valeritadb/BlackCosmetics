@@ -150,10 +150,9 @@ main { /*main en general*/
 }
 
 #BannerIndex{
-    width: 1500px;
+    width: 1510px;
     height: auto;
-    border-radius: 50px;
-    box-shadow: #c6937f 5px 5px;
+    border-radius: 10px;
 
 }
 

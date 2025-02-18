@@ -152,6 +152,68 @@ body {
     transition: .5s;
 }
 
+.card .Front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .Front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .Front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.card .Back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .Back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .Back .link a{
+    color: #f3f3f3;
+}
+
+.card .Back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .Back p{
+    letter-spacing: 1px;
+}
+
+.card:hover .Front{
+    transform: perspective(600px) rotateY(180dg);
+}
+.card:hover .Back{
+    transform: perspective(600px) rotateY(360dg);
+}
+
+
 /*----------------------------------------------------*/
 /*----------------MENU LATERAL-----------------------*/
 

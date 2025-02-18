@@ -179,6 +179,8 @@ body {
 }
 
 .card .back h3 {
+    font-family: "Anton", serif;
+    font-weight: 200;
     font-size: 30px;
     margin-top: 20px;
     letter-spacing: 2px;
@@ -186,6 +188,8 @@ body {
 
 .card .back p {
     letter-spacing: 1px;
+    font-family: "Quicksand", serif;
+    font-weight: 200;
 }
 
 /* Efecto de giro al hacer hover */

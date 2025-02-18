@@ -20,7 +20,7 @@ body {
     align-items: center;
     height: 100vh;
     display: flex;
-    background-color: gray;
+    background-color: white;
     min-height: 100vh;
     flex-wrap: wrap;
 }
@@ -66,17 +66,6 @@ body {
     background-color: black;
 }
 
-/*.logo h1 {
-    color: #fff;
-    font-weight: 400;
-    font-size: 22px;
-    margin-left: 10px;
-    font-family: "Anton", serif;
-    letter-spacing: 1px;
-    cursor: default;
-}*/
-
-
 .container .menu {
     float: right;
     line-height: 100px;
@@ -119,37 +108,43 @@ body {
 
 /*------MAIN-----------*/
 
-.card{
+.card {
     z-index: 1;
     position: relative;
     width: 300px;
     height: 300px;
     margin: 20px;
+    perspective: 600px; /* Perspectiva para el efecto 3D */
 }
 
-.card .face{
+.card .face {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
+    backface-visibility: hidden; /* Oculta la cara trasera inicialmente */
     border-radius: 10px;
     overflow: hidden;
-    transition: 1s;
+    transition: 1s; /* Transición suave */
 }
 
-.card .front{
-    transform: perspective(600px) rotateY(180deg);
+.card .front {
+    transform: rotateY(0deg); /* Cara delantera visible al inicio */
     box-shadow: 0 5px 10px #000;
 }
 
-.card .front img{
+.card .front img {
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
-.card .front h3{
+.card .front h3 {
+
+    font-family: "Quicksand", serif;
+    font-size: 20px;
+    font-weight: 200; /*LETRAS DELGADAS*/
+    letter-spacing: 2px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -161,45 +156,45 @@ body {
     cursor: default;
 }
 
-.card .back{
+.card .back {
 
-    transform: perspective(600px) rotateY(0deg);
+    transform: rotateY(180deg); /* Cara trasera oculta al inicio */
     background: rgba(0, 0, 0, 0.5);
-    padding: 15px;
     color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
     box-shadow: 0 5px 10px #000;
-  
 }
 
-.card .back .link{
+.card .back .link {
     border-top: solid 1px #f3f3f3;
     height: 50px;
     line-height: 50px;
 }
 
-.card .back .link a{
+.card .back .link a {
     color: #f3f3f3;
 }
 
-.card .back h3{
+.card .back h3 {
     font-size: 30px;
     margin-top: 20px;
     letter-spacing: 2px;
 }
 
-.card .back p{
+.card .back p {
     letter-spacing: 1px;
 }
 
-.card:hover .front{
-    transform: perspective(600px) rotateY(180deg);
+/* Efecto de giro al hacer hover */
+.card:hover .front {
+    transform: rotateY(180deg); /* Gira la cara delantera */
 }
-.Card :hover .back{
-    transform: perspective(600px) rotateY(360deg);
+
+.card:hover .back {
+    transform: rotateY(0deg); /* Gira la cara trasera */
 }
 
 

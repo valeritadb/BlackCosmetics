@@ -20,7 +20,7 @@ body {
     align-items: center;
     height: 100vh;
     display: flex;
-    background-color: black;
+    background-color: gray;
     min-height: 100vh;
     flex-wrap: wrap;
 }
@@ -28,17 +28,6 @@ body {
 
 /*-------------------------------*/
 
-/*.capa {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: -2;
-    top: 0;
-    left: 0;
-}*/
-
-/*-------------------------------*/
 
 /*------------HEADER------------------*/
 .header {
@@ -131,7 +120,7 @@ body {
 /*------MAIN-----------*/
 
 .card{
-    z-index: 0;
+    z-index: 1;
     position: relative;
     width: 300px;
     height: 300px;
@@ -145,22 +134,22 @@ body {
     backface-visibility: hidden;
     border-radius: 10px;
     overflow: hidden;
-    transition: .5s;
+    transition: 1s;
 }
 
-.card .face .Front{
-    transform: perspective(600px) rotateY(0deg);
+.card .front{
+    transform: perspective(600px) rotateY(180deg);
     box-shadow: 0 5px 10px #000;
 }
 
-.card .Front img{
+.card .front img{
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; 
 }
 
-.card .Front h3{
+.card .front h3{
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -169,44 +158,48 @@ body {
     color: #fff;
     background: rgba(0, 0, 0, 0.4);
     text-align: center;
+    cursor: default;
 }
 
-.card .Back{
-    transform: perspective(600px) rotateY(180deg);
-    background: rgb(3, 35, 54);
+.card .back{
+
+    transform: perspective(600px) rotateY(0deg);
+    background: rgba(0, 0, 0, 0.5);
     padding: 15px;
-    color: #f3f3f3;
+    color: #ffffff;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
     box-shadow: 0 5px 10px #000;
+  
 }
 
-.card .Back .link{
+.card .back .link{
     border-top: solid 1px #f3f3f3;
     height: 50px;
     line-height: 50px;
 }
 
-.card .Back .link a{
+.card .back .link a{
     color: #f3f3f3;
 }
 
-.card .Back h3{
+.card .back h3{
     font-size: 30px;
     margin-top: 20px;
     letter-spacing: 2px;
 }
 
-.card .Back p{
+.card .back p{
     letter-spacing: 1px;
 }
 
-.card:hover .Front{
-    transform: perspective(600px) rotateY(180dg);
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
 }
-.card:hover .Back{
-    transform: perspective(600px) rotateY(360dg);
+.Card :hover .back{
+    transform: perspective(600px) rotateY(360deg);
 }
 
 

@@ -27,6 +27,8 @@ body {
     height: 100vh;
     display: flex;
     background-color: black;
+    align-items: center;
+    min-height: 100vh;
 }
 
 
@@ -134,39 +136,20 @@ body {
 
 /*------MAIN-----------*/
 
-main { /*main en general*/
-    margin-top: 115px;
-    justify-content: center;
+.card{
+    position: relative;
+    width: 300px;
+    height: 300px;
 }
 
-#Titulo { /*TITULO MAIN INDEX*/
-
-    color: white;
-    font-size: 30px;
-    font-family: 'Anton', serif;
-    letter-spacing: 3px;
-    margin-top: auto;
-    text-align: center;
-}
-
-#BannerIndex{
-    
-    width: 1510px;
-    height: auto;
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
     border-radius: 10px;
-
-}
-
-.fotosModelo img{
-    width: 500px;
-    height: auto;
-    border-radius: 10px;
-}
-
-main p {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+    transition: .5s;
 }
 
 /*----------------------------------------------------*/

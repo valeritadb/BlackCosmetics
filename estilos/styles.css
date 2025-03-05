@@ -244,13 +244,6 @@ body {
     transform: rotateY(0deg); /* Gira la cara trasera */
 }
 
-#redes{
-    color: #fff;
-    position: absolute;
-    margin-top: 600px;
-    cursor: pointer;
-}
-
 /*-----------------FOOTER--------------------*/
 
 .pie-pagina{

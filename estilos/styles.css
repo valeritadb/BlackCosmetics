@@ -73,7 +73,16 @@ body {
     background-color: black ;
 }
 
-.container .menu a {
+.container .menu a{
+    font-size: 20px;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+}
+
+/*.container .menu a {
 
     display: inline-block;
     padding: 15px;
@@ -87,7 +96,7 @@ body {
     font-family: "Quicksand", serif;
     letter-spacing: 2px;
     background-color: black;
-}
+}*/
 
 .menu button{
 
@@ -109,48 +118,58 @@ body {
 
 /*------MAIN-----------*/
 
-.contbuscar{
-   position: absolute;
-   margin-top: 8%;
+.contbuscar{   /*BOTON DE BUSCAR*/
+    position: absolute;
+    padding: 5px;
+    margin-top: 20px;
 }
 
 .contbuscar input{
-    padding: 10px;
-    padding-right: px;
-    border: 0;
-    border-bottom: #000 solid 2px;
-    padding-bottom: 2px;
+    width: 0px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #000;
+    outline: none;
+
+    border-radius: 30px;
+    transition: all 0.6s ease;
 }
 
-#buscarboton{
-    align-items: center;
-    justify-content: center;
-    background-color: #c6937f;
-    padding: 10px;
+.boton-buscar button{
+
     position: absolute;
-    border: 0;
-    border-bottom: #000 solid 2px;
     top: 0;
-    bottom: 0;
     right: 0;
-    margin: auto;
+    background: violet;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     color: white;
+    font-size: 20px;
+    border-radius: 50%;
     cursor: pointer;
-    padding-bottom: 2px;
 }
 
-#buscarboton:hover {
-    background-color: #7a5b4f;
+.contbuscar:hover input{
+    width: 240px;
 }
 
-.contmain{
+.contbuscar input:focus{
+    width: 240px;
+}
+
+
+.contmain{ /*TARJETAS*/
     justify-content: center;
     align-items: center;
     display: flex;
     min-height: 100vh;
     flex-wrap: wrap;
 }
-.card {
+.card { 
     z-index: 1;
     position: relative;
     width: 300px;

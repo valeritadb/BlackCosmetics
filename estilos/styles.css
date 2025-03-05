@@ -131,7 +131,7 @@ body {
     font-size: 18px;
     color: #000;
     outline: none;
-
+    border: 2px solid white;
     border-radius: 30px;
     transition: all 0.6s ease;
 }
@@ -150,6 +150,7 @@ body {
     color: white;
     font-size: 20px;
     border-radius: 50%;
+    border: 2px solid white;
     cursor: pointer;
 }
 

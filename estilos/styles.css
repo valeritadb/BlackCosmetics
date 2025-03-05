@@ -32,6 +32,7 @@ body {
 
 /*------------HEADER------------------*/
 .header {
+    z-index: 1;
     background-color: black;
     width: 100%;
     height: 100px;
@@ -164,14 +165,16 @@ body {
 
 
 .contmain{ /*TARJETAS*/
+    z-index: 0;
     justify-content: center;
     align-items: center;
     display: flex;
     min-height: 100vh;
     flex-wrap: wrap;
+    position: relative;
 }
 .card { 
-    z-index: 1;
+  
     position: relative;
     width: 300px;
     height: 300px;
@@ -363,6 +366,7 @@ body {
     transition: all 500ms ease;
     opacity: 0;
     visibility: hidden;
+    z-index: 1;
     
 }
 

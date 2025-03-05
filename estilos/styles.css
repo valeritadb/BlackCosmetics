@@ -166,20 +166,7 @@ body {
     width: 240px;
 }
 
-#img-index{
-    height: 400px;
-    width: auto;
-    float: left;
-    margin-left: 0;
-    margin-right: 80%;
-}
-#img-index2{
-    height: 400px;
-    width: auto;
-    float: left;
-    margin-left: 80%;
-    margin-right: 0;
-}
+
 
 .contmain{ /*TARJETAS*/
     z-index: 0;

@@ -271,12 +271,21 @@ body {
     transform: rotateY(0deg); /* Gira la cara trasera */
 }
 
+#img-index{
+    position: relative;
+    width: 740px;
+    height: 740px;
+    padding: 2px;
+    
+}
+
 /*-----------------FOOTER--------------------*/
 
 .pie-pagina{
     
     width: 100%;
     background-color: #000;
+    position: relative;
 }
 
 .pie-pagina .grupo-1{

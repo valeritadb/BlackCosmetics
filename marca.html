@@ -5,58 +5,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <meta name="author" content="Valeria De Barros">
-    <link rel="icon" href="#" type="icon_black"> <!--icono para la barra del navegador-->
-    <link rel="stylesheet" href="estilos/styles.css"> <!--hoja de estilos base-->
-    <link rel="stylesheet" href="estilos/fontello.css"> <!--hoja de estilos para iconos-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--fuentes-->
+    <link rel="icon" href="#" type="icon_black"> <!--Icono para la barra del navegador-->
+    <link rel="stylesheet" href="estilos/styles.css"> <!--Hojas de estilo base-->
+    <link rel="stylesheet" href="estilos/fontello.css"> <!--Hojas de estilo para los Iconos-->
+    <link rel="stylesheet" href="estilos/fontello2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <title>Black</title>
+    <script src="https://kit.fontawesome.com/3696051f79.js" crossorigin="anonymous"></script>
+    <title>Black Cosmetics</title>
 </head>
 
 <body>
-    <header class="header"> <!--Cabecera-->
+    <header class="header"> <!--Cabecera con menu-->
         <div class="container">
-
             <div class="btn-menu">
-                <label for="btn-menu" class="icon-menu"></label>
+                <label for="btn-menu" class="fa-solid fa-bars"></label>
             </div>
-
             <div class="logo">
-                <img src="fotos/BLACK (blanco).png" alt="fondo Black">
+                <img src="fotos/BLACK (blanco).png" alt="logodeblack">
             </div>
 
             <nav class="menu">
-                <a href="index.html">Inicio</a>
-                <a href="iniciarSesion.html">Iniciar Sesion</a>
-                <a href="registro.html">Registrarse</a>
-                <a href="carrito.html">Carrito</a>
-                
+                <a href="index.html" class="fa-solid fa-house"></a>
+                <a href="iniciarSesion.html" class="fa-solid fa-circle-user"></a>
+                <a href="carrito.html" class="fa-solid fa-cart-shopping"></a>
             </nav>
         </div>
     </header>
-    <main>
-    <div class="capa"></div> <!--menu lateral-->
 
-    <input type="checkbox" id="btn-menu">
-    <div class="container-menu">
-        <div class="cont-menu">
-            <nav>
-                <a href="index.html">Inicio</a>
-                <a href="productos.html">Maquillaje</a>
-                <a href="clientes.html">Clientes</a>
-                <a href="marca.html">Sobre Nosotros</a>
-                <a href="contacto.html">Contacto</a>
-                <a href="preguntas.html">Preguntas Frecuentes</a>
-            </nav>
-            <label for="btn-menu" class="icon-equis"></label>
+        <div class="contbuscar">
+            <input type="text" placeholder="Buscar...">
+            <div class="boton-buscar">
+                <button class="fa-solid fa-magnifying-glass"></button>
+            </div>
         </div>
-    </div>
 
-    </main>
+        <!--VV MENU LATERAL-->
+        <div> 
+            <input type="checkbox" id="btn-menu" class="fa-solid fa-bars">
+            <div class="container-menu">
+                <div class="cont-menu">
+                    <nav>
+                        <a href="index.html">Inicio</a>
+                        <a href="productos.html">Maquillaje</a>
+                        <a href="clientes.html">Clientes</a>
+                        <a href="marca.html">Sobre Nosotros</a>
+                        <a href="contacto.html">Contacto</a>
+                        <a href="preguntas.html">Preguntas Frecuentes</a>
+                    </nav>
+                    <label for="btn-menu" class="fa-solid fa-xmark"></label>
+                </div>
+            </div>
+         </div>
 
-    <footer>
-        <p>© Black, todos los derechos reservados.</p>
-    </footer>
+         <div class="contmain">
+            <img src="fotos/imagen4.jpg" alt="">
+            <img src="fotos/imagen5.jpg" alt="">
+         </div>
+
+         <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="fotos/BLACK (blanco).png" alt="logo de black">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>Sobre Nosotros</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, earum?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, nam.</p>
+                </div>
+                <div class="box">
+                    <h2>SIGUENOS</h2>
+                    <div class="red-social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small> &copy; 2025 <b>BLACK COSMETICS</b> - Todos los derechos reservados</small>
+            </div>
+        </footer>
 </body>
 </html>

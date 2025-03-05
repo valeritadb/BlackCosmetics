@@ -1,4 +1,9 @@
 /*----------FUENTES-----------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .anton-regular {
     font-family: "Anton", serif;
     font-weight: 400;
@@ -15,19 +20,13 @@
 /*-------------------------------*/
 
 body {
-
     justify-content: center;
-    align-items: center;
-    height: 100vh;
     display: flex;
-    background-color: white;
-    min-height: 100vh;
     flex-wrap: wrap;
 }
 
 
 /*-------------------------------*/
-
 
 /*------------HEADER------------------*/
 .header {
@@ -108,6 +107,49 @@ body {
 
 /*------MAIN-----------*/
 
+.contbuscar{
+   position: absolute;
+   margin-top: 8%;
+}
+
+.contbuscar input{
+    padding: 10px;
+    padding-right: px;
+   
+    border:0 ;
+    border-bottom: #000 solid 2px;
+    padding-bottom: 2px;
+}
+
+#buscarboton{
+    align-items: center;
+    justify-content: center;
+    background-color: #c6937f;
+    padding: 10px;
+    position: absolute;
+    border: 0;
+    border-bottom: #000 solid 2px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+    cursor: pointer;
+    padding-bottom: 2px;
+
+}
+
+#buscarboton:hover {
+    background-color: #7a5b4f;
+}
+
+.contmain{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
 .card {
     z-index: 1;
     position: relative;
@@ -204,11 +246,11 @@ body {
 
 /*-----------------FOOTER--------------------*/
 
-footer p{
+footer{
     background-color: #000;
-    position: fixed;
+    position: relative;
     color: white;
-    margin: auto;
+    margin-top: auto;
 }
 
 /*----------------MENU LATERAL-----------------------*/

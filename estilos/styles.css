@@ -24,9 +24,10 @@ body {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    background-image: url(/fotos/fondoprueba.jpg);
+    background: rgb(0, 0, 0);
+   /* background-image: url(/fotos/fondoprueba.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 
 /*-------------------------------*/
@@ -40,6 +41,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    box-shadow: 2px 3px rgba(92, 92, 92, 0.5);
 }
 
 .container {
@@ -271,15 +273,15 @@ body {
     transform: rotateY(0deg); /* Gira la cara trasera */
 }
 
-#img-index{
+#img-index{ /*IMAGENES ENLACES*/
     position: relative;
-    width: 740px;
+    width: 738px;
     height: 740px;
-    padding: 2px;
+    padding: 3px;
     
 }
 
-.caja-sus{
+.caja-sus{ /*CAJA DE SUSCRIPCIONES*/
 
     height: 200px;
     width: 100%;

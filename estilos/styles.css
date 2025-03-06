@@ -187,7 +187,7 @@ body {
     border-radius: 10%;
     margin: 20px;
     perspective: 600px; /* Perspectiva para el efecto 3D */
-    box-shadow:10px 8px 14px #5f5e5e8c ;
+    box-shadow:10px 8px 14px #2727278c ;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -203,8 +203,8 @@ body {
     position: absolute;
     height: 300px;
     width: 300px;
-    background-image: conic-gradient(red 20deg, transparent 120deg);
-    animation: rotar 3s linear infinite;
+    background-image: conic-gradient(#a8966e 20deg, transparent 120deg);
+    animation: rotar 4s linear infinite;
 }
 
 @keyframes rotar {
@@ -219,19 +219,23 @@ body {
 .card::after{
     content: "";
     position: absolute;
-    height: 260px;
-    width: 260px;
+    height: 290px;
+    width: 290px;
     border-radius: 10%;
+    background-color: black;
+    z-index: 0;
+
 }
 
 .card .face {
+    z-index: 1;
     position: absolute;
     width: 97%;
     height: 97%;
     backface-visibility: hidden; /* Oculta la cara trasera inicialmente */
     border-radius: 10%;
     overflow: hidden;
-    transition: 1s; /* Transición suave */
+    transition: 0.4s; /* Transición suave */
 
 }
 
@@ -275,6 +279,7 @@ body {
     text-align: center;
     box-shadow: 0 5px 10px #000;
     cursor: pointer;
+    z-index: 1;
 }
 
 .card .back .link {

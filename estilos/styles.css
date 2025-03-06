@@ -169,6 +169,8 @@ body {
     border: 2px solid white;
     border-radius: 30px;
     transition: all 0.6s ease;
+    position: relative;
+    
 }
 
 .boton-buscar button{
@@ -197,7 +199,24 @@ body {
     width: 240px;
 }
 
-
+@media (max-width: 768px) { /*AJUSTES PARA MOVIL*/
+    .contbuscar {
+        margin-left: 0; /* Quitar margen fijo */
+        top: 10%; /* Asegurar buena posición en móviles */
+        width: 100%; /* Ocupa el ancho completo */
+        display: flex;
+        justify-content: center; /* Centrar horizontalmente */
+    }
+    
+    .contbuscar input {
+        width: 200px; /* Tamaño limitado */
+    }
+    
+    .boton-buscar button {
+        width: 35px;
+        height: 35px;
+    }
+}
 
 .contmain{ /*TARJETAS*/
     z-index: 0;
@@ -344,6 +363,19 @@ body {
     transform: rotateY(0deg); /* Gira la cara trasera */
 }
 
+@media (max-width: 768px) { /*AJUSTES PARA MOVIL*/
+    .card {
+        width: 90%; /* Ocupa casi todo el ancho de la pantalla */
+        margin: 10px auto; /* Centrarlas */
+    }
+
+    .card::before, .card::after {
+        height: 90%;
+        width: 90%;
+    }
+}
+
+
 #img-index{ /*IMAGENES ENLACES*/
     position: relative;
     width: 738px;
@@ -421,6 +453,30 @@ body {
     border: 2px solid rgb(0, 0, 0);
     cursor: pointer;
 }
+
+@media (max-width: 768px) { /*AJUSTES PARA MOVILES*/
+    .caja-sus {
+        flex-direction: column; /* Cambiar de fila a columna */
+        height: auto; /* Adaptar altura */
+        padding: 10px;
+    }
+
+    .caja-sus-texto {
+        text-align: center; /* Centrar texto */
+        padding: 10px;
+    }
+
+    .form-email {
+        float: none; /* Quitar float */
+        padding: 10px 0;
+        text-align: center; /* Centrar formulario */
+    }
+
+    .form-email #email-box {
+        width: 80%; /* Reducir tamaño del input */
+    }
+}
+
 
 /*-----------------FOOTER--------------------*/
 
@@ -510,6 +566,20 @@ body {
     display: none;
     background-color:black;
 }
+@media (max-width: 768px) { /*ajustes para moviles*/
+    #btn-menu {
+        display: block; /* Mostrar el botón en pantallas pequeñas */
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 40px;
+        height: 40px;
+        background-color: #000;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
 
 
 .container-menu{
@@ -539,6 +609,27 @@ body {
     position: relative;
     transition: translateX(-100%);
 }
+
+@media (max-width: 768px) {
+    .cont-menu {
+        max-width: 200px; /* Reducir el ancho del menú */
+        height: 100%; /* Asegurar que ocupe toda la altura */
+    }
+
+    .cont-menu nav a {
+        font-size: 16px; /* Reducir el tamaño de la fuente */
+        padding: 15px; /* Ajustar el espaciado */
+    }
+
+    .cont-menu label {
+        font-size: 16px; /* Reducir el tamaño del icono de cierre */
+    }
+}
+.cont-menu {
+    overflow-y: auto; /* Añade desplazamiento vertical */
+}
+
+
 
 #btn-menu:checked ~ .container-menu .cont-menu {
     transform: translateX(0%);
@@ -578,6 +669,22 @@ body {
 .icon-equis{
     background-color: black;
 }
+
+@media (max-width: 768px) { /*AJUSTES PARA MOVIL*/
+    .container-menu {
+        background: rgba(0, 0, 0, 0.8); /* Aumentar opacidad del fondo */
+    }
+
+    .container-menu .cont-menu {
+        transform: translateX(-100%); /* Asegúrate de que esté oculto inicialmente */
+        transition: transform 0.3s ease-in-out; /* Transición más rápida */
+    }
+
+    #btn-menu:checked ~ .container-menu .cont-menu {
+        transform: translateX(0); /* Mostrar el menú */
+    }
+}
+
 /*------------------------------------------------*/
 
 

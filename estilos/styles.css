@@ -122,6 +122,33 @@ body {
 
 }
 
+/* Media Queries para dispositivos pequeños */
+@media (max-width: 768px) {
+    body {
+        margin-top: 2%;
+        flex-direction: column;
+    }
+
+    .header {
+        height: 70px;
+    }
+
+    .logo img {
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .menu a {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .menu button {
+        font-size: 14px;
+    }
+}
+
+
 /*------MAIN-----------*/
 
 .contbuscar{   /*BOTON DE BUSCAR*/

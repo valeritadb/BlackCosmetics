@@ -127,8 +127,9 @@ body {
 .contbuscar{   /*BOTON DE BUSCAR*/
     position: absolute;
     padding: 5px;
-    margin-top: -60px;
     z-index: 1;
+    margin-top: 25px;
+    margin-left: 40%;
 }
 
 .contbuscar input{

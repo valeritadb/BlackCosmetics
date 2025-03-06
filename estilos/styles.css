@@ -376,7 +376,7 @@ body {
 }
 
 
-#img-index{ /*IMAGENES ENLACES*/
+/*#img-index{ /*IMAGENES ENLACES
     position: relative;
     width: 100%;
     height: 740px;
@@ -388,7 +388,30 @@ body {
 #img-index:hover{
     width: 720px;
     height: 722px;
+}*/
+
+#img-index {
+    width: 99.8%; /* Ocupa el 90% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción original */
+    max-width: 738px; /* Límite máximo para evitar que se haga demasiado grande */
+    transition: all 0.3s ease;
 }
+
+#img-index:hover {
+    width: 98%; /* Pequeño incremento al pasar el mouse */
+    height: auto; /* Mantiene proporción */
+}
+
+@media (max-width: 768px) {
+    #img-index {
+        width: 100%; /* Ajustar al ancho completo de la pantalla */
+        height: auto; /* Mantener proporciones */
+        max-width: none; /* Sin límite fijo */
+        margin: 0 auto; /* Centrar si es necesario */
+    }
+}
+
+
 
 .caja-sus{ /*CAJA DE SUSCRIPCIONES*/
 

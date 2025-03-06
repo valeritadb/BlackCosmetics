@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 .anton-regular {
     font-family: "Anton", serif;
@@ -22,21 +22,15 @@
 
 body {
     
-    /*margin-top: 6%;
+    margin-top: 6%;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     background: rgb(0, 0, 0);
-   /* background-image: url(/fotos/fondoprueba.jpg);
+   background-image: url(/fotos/fondoprueba.jpg);
     background-repeat: no-repeat;
-    background-size: cover;*/
-        display: flex;
-        flex-direction: column; /* Apila los elementos */
-        align-items: center; /* Centra horizontalmente */
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden; /* Evita desplazamientos laterales no deseados */
-        background-color: #000;
+    background-size: cover;
+   
     
 }
 
@@ -97,22 +91,6 @@ body {
 
 }
 
-/*.container .menu a {
-
-    display: inline-block;
-    padding: 15px;
-    line-height: normal;
-    text-decoration: none;
-    color: #fff;
-    transition: all 0.3s ease;
-    border-bottom: 5px solid transparent;
-    font-size: 15px;
-    margin-right: 5px;
-    font-family: "Quicksand", serif;
-    letter-spacing: 2px;
-    background-color: black;
-}*/
-
 .menu button{
 
     border-radius: 10px;
@@ -129,23 +107,6 @@ body {
     color: #c6937f;
 
 }
-
-/* Media Queries para dispositivos pequeños */
-@media (max-width: 768px) {
-    .header {
-        height: 70px; /* Reducir altura */
-        position: fixed; /* Asegura que se quede en su lugar */
-        z-index: 10; /* Evitar superposición no deseada */
-        background-color: rgba(0, 0, 0, 0.8); /* Hacerlo semi-transparente */
-    }
-
-    .header .menu a {
-        font-size: 14px; /* Reducir tamaño de los enlaces */
-        padding: 5px; /* Ajustar espaciado */
-    }
-}
-
-
 
 /*------MAIN-----------*/
 
@@ -195,25 +156,6 @@ body {
 
 .contbuscar input:focus{
     width: 240px;
-}
-
-@media (max-width: 768px) { /*AJUSTES PARA MOVIL*/
-    .contbuscar {
-        margin-left: 0; /* Quitar margen fijo */
-        top: 10%; /* Asegurar buena posición en móviles */
-        width: 100%; /* Ocupa el ancho completo */
-        display: flex;
-        justify-content: center; /* Centrar horizontalmente */
-    }
-    
-    .contbuscar input {
-        width: 200px; /* Tamaño limitado */
-    }
-    
-    .boton-buscar button {
-        width: 35px;
-        height: 35px;
-    }
 }
 
 .contmain{ /*TARJETAS*/
@@ -361,20 +303,6 @@ body {
     transform: rotateY(0deg); /* Gira la cara trasera */
 }
 
-@media (max-width: 768px) {
-    .contmain {
-        flex-direction: column; /* Alinear tarjetas verticalmente */
-        align-items: center; /* Centrar en la pantalla */
-    }
-
-    .card {
-        width: 90%; /* Ajuste automático del ancho */
-        margin: 10px auto; /* Centrado */
-    }
-}
-
-
-
 #img-index{ /*IMAGENES ENLACES*/
     position: relative;
     width: 99.8%;
@@ -389,17 +317,6 @@ body {
     width: 98%;
     height: auto;
 }
-
-@media (max-width: 768px) {
-    #img-index {
-        width: 100%; /* Ajustar al ancho completo de la pantalla */
-        height: auto; /* Mantener proporciones */
-        max-width: none; /* Sin límite fijo */
-        margin: 0 auto; /* Centrar si es necesario */
-    }
-}
-
-
 
 .caja-sus{ /*CAJA DE SUSCRIPCIONES*/
 
@@ -464,30 +381,6 @@ body {
     border: 2px solid rgb(0, 0, 0);
     cursor: pointer;
 }
-
-@media (max-width: 768px) { /*AJUSTES PARA MOVILES*/
-    .caja-sus {
-        flex-direction: column; /* Cambiar de fila a columna */
-        height: auto; /* Adaptar altura */
-        padding: 10px;
-    }
-
-    .caja-sus-texto {
-        text-align: center; /* Centrar texto */
-        padding: 10px;
-    }
-
-    .form-email {
-        float: none; /* Quitar float */
-        padding: 10px 0;
-        text-align: center; /* Centrar formulario */
-    }
-
-    .form-email #email-box {
-        width: 80%; /* Reducir tamaño del input */
-    }
-}
-
 
 /*-----------------FOOTER--------------------*/
 
@@ -559,39 +452,12 @@ body {
     color: #fff;
 }
 
-@media screen and (max-width: 800px){
-    .pie-pagina .grupo-1{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-    }
-}
-
-
-
-
 /*----------------MENU LATERAL-----------------------*/
 
 #btn-menu{
     display: none;
     background-color:black;
 }
-@media (max-width: 768px) { /*ajustes para moviles*/
-    #btn-menu {
-        display: block; /* Mostrar el botón en pantallas pequeñas */
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        width: 40px;
-        height: 40px;
-        background-color: #000;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-}
-
-
 
 .container-menu{
     position: fixed;
@@ -621,26 +487,9 @@ body {
     transition: translateX(-100%);
 }
 
-@media (max-width: 768px) {
-    .cont-menu {
-        max-width: 200px; /* Reducir el ancho del menú */
-        height: 100%; /* Asegurar que ocupe toda la altura */
-    }
-
-    .cont-menu nav a {
-        font-size: 16px; /* Reducir el tamaño de la fuente */
-        padding: 15px; /* Ajustar el espaciado */
-    }
-
-    .cont-menu label {
-        font-size: 16px; /* Reducir el tamaño del icono de cierre */
-    }
-}
 .cont-menu {
     overflow-y: auto; /* Añade desplazamiento vertical */
 }
-
-
 
 #btn-menu:checked ~ .container-menu .cont-menu {
     transform: translateX(0%);
@@ -681,33 +530,7 @@ body {
     background-color: black;
 }
 
-@media (max-width: 768px) { /*AJUSTES PARA MOVIL*/
-    .container-menu {
-        background: rgba(0, 0, 0, 0.8); /* Aumentar opacidad del fondo */
-    }
-
-    .container-menu .cont-menu {
-        transform: translateX(-100%); /* Asegúrate de que esté oculto inicialmente */
-        transition: transform 0.3s ease-in-out; /* Transición más rápida */
-    }
-
-    #btn-menu:checked ~ .container-menu .cont-menu {
-        transform: translateX(0); /* Mostrar el menú */
-    }
-}
-@media (max-width: 768px) {
-    .container-menu {
-        background: rgba(0, 0, 0, 0.9); /* Más oscuro para mayor contraste */
-    }
-
-    .cont-menu {
-        max-width: 200px; /* Ajustar ancho */
-    }
-}
-
-
 /*------------------------------------------------*/
-
 
 /*-------ESTILOS PARA SECCION SOBRE NOSOTROS--------*/
 

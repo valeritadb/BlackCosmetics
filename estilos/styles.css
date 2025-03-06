@@ -27,11 +27,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     background: rgb(0, 0, 0);
-   background-image: url(/fotos/fondoprueba.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-   
-    
 }
 
 /*-------------------------------*/

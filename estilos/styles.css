@@ -279,6 +279,69 @@ body {
     
 }
 
+.caja-sus{
+
+    height: 200px;
+    width: 100%;
+    background-color: whitesmoke;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+.caja-sus-texto{
+    float: left;
+    padding: 20px;
+    padding-left: 50px;
+}
+.caja-sus-texto h2{
+    font-family: 'Anton', serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #454545;
+}
+
+.caja-sus-texto p{
+    font-family: 'Quicksand', serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #818181;
+}
+
+.form-email{
+
+    float: right;
+    padding-left: 200px;
+    
+}
+
+.form-email #email-box{
+
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+    font-size: 18px;
+    color: #000;
+    outline: none;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px 0 0 5px;
+}
+
+.form-email #email-boton{
+
+    position: absolute;
+    background: #c6937f;
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    border-radius: 0 5px 5px 0;
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+
 /*-----------------FOOTER--------------------*/
 
 .pie-pagina{

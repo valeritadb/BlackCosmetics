@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 .anton-regular {
     font-family: "Anton", serif;
@@ -21,7 +22,7 @@
 
 body {
     
-    margin-top: 6%;
+    /*margin-top: 6%;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -29,6 +30,14 @@ body {
    /* background-image: url(/fotos/fondoprueba.jpg);
     background-repeat: no-repeat;
     background-size: cover;*/
+        display: flex;
+        flex-direction: column; /* Apila los elementos */
+        align-items: center; /* Centra horizontalmente */
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Evita desplazamientos laterales no deseados */
+        background-color: #000;
+    
 }
 
 /*-------------------------------*/
@@ -123,29 +132,19 @@ body {
 
 /* Media Queries para dispositivos pequeños */
 @media (max-width: 768px) {
-    body {
-        margin-top: 2%;
-        flex-direction: column;
-    }
-
     .header {
-        height: 70px;
+        height: 70px; /* Reducir altura */
+        position: fixed; /* Asegura que se quede en su lugar */
+        z-index: 10; /* Evitar superposición no deseada */
+        background-color: rgba(0, 0, 0, 0.8); /* Hacerlo semi-transparente */
     }
 
-    .logo img {
-        height: auto;
-        margin-top: 10px;
-    }
-
-    .menu a {
-        font-size: 16px;
-        padding: 5px;
-    }
-
-    .menu button {
-        font-size: 14px;
+    .header .menu a {
+        font-size: 14px; /* Reducir tamaño de los enlaces */
+        padding: 5px; /* Ajustar espaciado */
     }
 }
+
 
 
 /*------MAIN-----------*/
@@ -362,17 +361,18 @@ body {
     transform: rotateY(0deg); /* Gira la cara trasera */
 }
 
-@media (max-width: 768px) { /*AJUSTES PARA MOVIL*/
-    .card {
-        width: 90%; /* Ocupa casi todo el ancho de la pantalla */
-        margin: 10px auto; /* Centrarlas */
+@media (max-width: 768px) {
+    .contmain {
+        flex-direction: column; /* Alinear tarjetas verticalmente */
+        align-items: center; /* Centrar en la pantalla */
     }
 
-    .card::before, .card::after {
-        height: 90%;
-        width: 90%;
+    .card {
+        width: 90%; /* Ajuste automático del ancho */
+        margin: 10px auto; /* Centrado */
     }
 }
+
 
 
 #img-index{ /*IMAGENES ENLACES*/
@@ -695,6 +695,16 @@ body {
         transform: translateX(0); /* Mostrar el menú */
     }
 }
+@media (max-width: 768px) {
+    .container-menu {
+        background: rgba(0, 0, 0, 0.9); /* Más oscuro para mayor contraste */
+    }
+
+    .cont-menu {
+        max-width: 200px; /* Ajustar ancho */
+    }
+}
+
 
 /*------------------------------------------------*/
 

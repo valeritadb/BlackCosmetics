@@ -635,39 +635,45 @@ body {
 /*-------ESTILOS PARA SECCION SOBRE NOSOTROS--------*/
 
 .cont-sn{
+
     margin: 2%;
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     padding: 20px;
+    gap: 20px;
+    align-items: center;
 }
 
 .cont-img-sn{
-    float: left;
+
+    flex: 1;
+    min-width: 300px;
     align-items: center;
     justify-content: center;
-    width: 90%;
-    height: 90%;
+    display: flex;
     border-radius: 5%;
 }
 
 .cont-img-sn img{
-    position: relative;
+
     width: 100%;
-    height: 100%;
-    margin: 0%;
-    border-radius: 5%;
+    height: auto;
+    border-radius: 1%;
     box-shadow: 10px 8px 10px #72252b;
 }
 
 .cont-txt-sn{
-    align-items: center;
-    justify-content: center;
+
+    flex: 1;
     text-align: center;
-    margin: 10px;
+    min-width: 300px;
     padding: 10px;
-    margin-right: 5px;
+
 }
+
 .cont-txt-sn h2{
+
     font-family: 'Anton', serif;
     font-size: 40px;
     font-weight: 100;
@@ -675,15 +681,39 @@ body {
     padding-bottom: 5px;
     text-shadow: 2px 2px 5px #72252b;
     color: whitesmoke;
+
 }
 
 .cont-txt-sn p{
+
     font-family: 'Quicksand', serif;
     font-size: 18px;
     font-weight: 100;
     letter-spacing: 2px;
     color: gray;
-    margin: 15%;
+    margin: 15px 0;
+}
+
+/* Media query para móviles */
+@media screen and (max-width: 768px) {
+    .cont-sn {
+        flex-direction: row; /* Mantiene los elementos en línea */
+        padding: 10px; /* Reducimos el padding */
+    }
+
+    .cont-img-sn,
+    .cont-txt-sn {
+        min-width: 100%; /* Ocupa todo el ancho en móviles */
+    }
+
+    .cont-txt-sn h2 {
+        font-size: 30px; /* Reducimos el tamaño del título en móviles */
+    }
+
+    .cont-txt-sn p {
+        font-size: 16px; /* Reducimos el tamaño del texto en móviles */
+        margin: 10px 0; /* Ajustamos el margen */
+    }
 }
  
 /*ESTILOS PARA LA SECCION DE CONTACTO*/

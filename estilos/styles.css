@@ -416,6 +416,7 @@ body {
     .form-email {
         width: 100%;
         justify-content: center;
+        margin-right: 1%;
     }
 
     .form-email #email-box {

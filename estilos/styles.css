@@ -386,7 +386,7 @@ body {
 
 .pie-pagina{
     
-    width: 100%;
+    width: 95%;
     background-color: #000;
     position: relative;
 }
@@ -623,7 +623,7 @@ body {
 }
 
 .form-group input[type="text"],
-input[type="email"],
+#correo,
 input[type="tel"],
 textarea {
     width: 100%;

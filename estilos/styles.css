@@ -462,7 +462,7 @@ body {
     color: #fff;
     margin-bottom: 25px;
     margin-top: 5px;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .pie-pagina .grupo-1 .box p{
@@ -472,7 +472,16 @@ body {
     font-size: 12px;
 }
 
+.pie-pagina .grupo-1 .red-social{
+    
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+   
+}
+
 .pie-pagina .grupo-1 .red-social a{
+    font-size: 15px;
     display: inline-block;
     text-decoration: none;
     width: 45px;

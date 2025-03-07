@@ -963,7 +963,7 @@ textarea {
 }
 
 .cont-img-perso img{
-
+    border-radius: 2%;
 }
 
 .cont-img-perso img:hover{

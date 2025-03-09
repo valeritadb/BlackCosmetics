@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!--fuentes-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <title>Black Clientes</title>
+    <script src="https://kit.fontawesome.com/3696051f79.js" crossorigin="anonymous"></script>
+    <title>Estamos trabajando...</title>
 </head>
 
 <body>
@@ -27,15 +28,14 @@
             </div>
 
             <nav class="menu">
-                <a href="index.html">Inicio</a>
-                <a href="iniciarSesion.html">Iniciar Sesion</a>
-                <a href="registro.html">Registrarse</a>
-                <a href="carrito.html">Carrito</a>
-                
+                <a href="index.html" class="fa-solid fa-house"></a>
+                <a href="error.html" class="fa-solid fa-circle-user"></a>
+                <a href="error.html" class="fa-solid fa-cart-shopping"></a>
             </nav>
+
         </div>
     </header>
-    <main>
+
     <div class="capa"></div> <!--menu lateral-->
 
     <input type="checkbox" id="btn-menu">
@@ -44,7 +44,7 @@
             <nav>
                 <a href="index.html">Inicio</a>
                 <a href="productos.html">Maquillaje</a>
-                <a href="clientes.html">Clientes</a>
+                <a href="error.html">Clientes</a>
                 <a href="marca.html">Sobre Nosotros</a>
                 <a href="contacto.html">Contacto</a>
                 <a href="preguntas.html">Preguntas Frecuentes</a>
@@ -52,11 +52,39 @@
             <label for="btn-menu" class="icon-equis"></label>
         </div>
     </div>
-
-    </main>
-
-    <footer>
-        <p>© Black, todos los derechos reservados.</p>
+    <div class="contmain-error">
+        <h2>Lo sentimos...</h2>
+        <p>Estamos trabajando para mejorar tu experiencia.</p>
+        <img src="fotos/imgError.jpg" alt="">
+    </div>
+    <!--VVV FOOTER VVV-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="fotos/BLACK (blanco).png" alt="logo de black">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>CONTACTO</h2>
+                <p>+34 000 00 00 00</p>
+                <p>BLACKCOSMETICS@INFO.COM</p>
+            </div>
+            <div class="box">
+                <h2>SÍGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small> &copy; 2025 <b>BLACK COSMETICS</b> - Todos los derechos reservados</small>
+        </div>
     </footer>
 </body>
 </html>

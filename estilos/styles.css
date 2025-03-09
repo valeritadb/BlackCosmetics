@@ -979,3 +979,28 @@ textarea {
     }
 }
 
+.contmain-error{
+    text-align: center;
+    color: whitesmoke;
+}
+
+.contmain-error h2{
+
+    font-family: 'Anton', serif;
+    font-size: 40px;
+    font-weight: 100;
+    letter-spacing: 2px;
+
+}
+
+.contmain-error p{
+
+    font-family: 'Quicksand', serif;
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: gray;
+    margin-bottom: 2%;
+}
+
+

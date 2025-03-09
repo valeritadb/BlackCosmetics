@@ -980,12 +980,17 @@ textarea {
 }
 
 .contmain-error{
+    
+    width: 100%;
+    height: 100%;
     text-align: center;
     color: whitesmoke;
+    overflow-x: hidden;
 }
 
 .contmain-error h2{
 
+    margin-top: 25%;
     font-family: 'Anton', serif;
     font-size: 40px;
     font-weight: 100;
@@ -1002,5 +1007,28 @@ textarea {
     color: gray;
     margin-bottom: 2%;
 }
+
+@media screen and (max-width: 768px) {
+
+    .contmain-error{
+
+        width: 80%;
+        height: 80%;
+    }
+
+    .contmain-error h2{
+        margin-top: 30%;
+        margin-bottom: 10%;
+    }
+
+    .contmain-error img{
+
+        margin-top: 10%;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
 
 

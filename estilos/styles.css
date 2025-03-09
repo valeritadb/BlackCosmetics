@@ -661,7 +661,7 @@ body {
     width: 100%;
     height: auto;
     border-radius: 1%;
-    box-shadow: 10px 8px 10px #72252b;
+    box-shadow: 10px 8px 10px #300f12;
 }
 
 .cont-txt-sn{
@@ -918,7 +918,7 @@ textarea {
     width: 100%;
     height: 200px;
     object-fit: cover; /* Ajusta la imagen sin distorsionar */
-    border-radius: 10px 10px 0 0;
+    border-radius: 2%;
 }
 
 .producto h3 {
@@ -952,22 +952,6 @@ textarea {
 .producto .btn-comprar:hover {
 
     background-color: #5a1d22; /* Color más oscuro al hacer hover */
-}
-
-.cont-img-perso {
-
-    width: 90%;
-    height: auto;
-    max-height: 500px;
-}
-
-.cont-img-perso img{
-    border-radius: 2%;
-}
-
-.cont-img-perso img:hover{
-    
-    transform: scale(0.8);
 }
 
 

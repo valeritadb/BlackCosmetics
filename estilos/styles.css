@@ -977,6 +977,10 @@ textarea {
     .producto .btn-comprar {
         font-size: 14px; /* Reducimos el tamaño del botón */
     }
+
+    .producto img{
+        width: 102%;
+    }
 }
 
 .contmain-error{

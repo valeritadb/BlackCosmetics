@@ -1086,8 +1086,10 @@ textarea {
 }
 
 @media screen {
-    .video-main video{
+    .video-main {
         
+        padding: 2%;
+        margin-top: 1%;
     }
 }
 

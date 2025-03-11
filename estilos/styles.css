@@ -29,7 +29,7 @@ body {
     background: rgb(0, 0, 0);
     background-repeat: no-repeat;
     background-size: cover;
-       
+
 }
 
 /*-------------------------------*/
@@ -660,7 +660,7 @@ body {
     width: 100%;
     height: auto;
     border-radius: 1%;
-    box-shadow: 10px 8px 10px #300f12;
+    box-shadow: 10px 8px 10px #333333;
 }
 
 .cont-txt-sn{

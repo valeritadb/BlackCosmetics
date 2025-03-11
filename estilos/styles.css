@@ -959,6 +959,7 @@ textarea {
 
 /* Media query para móviles */
 @media screen and (max-width: 768px) {
+    
     .grid-productos {
         grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
     }

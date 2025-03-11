@@ -919,6 +919,7 @@ textarea {
     height: 200px;
     object-fit: cover; /* Ajusta la imagen sin distorsionar */
     border-radius: 2%;
+    
 }
 
 .producto h3 {
@@ -1087,7 +1088,7 @@ textarea {
 
 @media screen {
     .video-main {
-        
+
         padding: 2%;
         margin-top: 1%;
     }

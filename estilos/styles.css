@@ -53,9 +53,9 @@ body {
 }
 
 .container .btn-menu, .logo {
+
     float: left;
     line-height: 100px;
-    
     margin-right: 10px;
 }
 
@@ -67,14 +67,16 @@ body {
 }
 
 .logo img{
+
     width: 100%;
     height: 90%;
     float: left;
     margin-top: 25px;
-    
+
 }
 
 .container .menu {
+    
     float: right;
     line-height: 100px;
     
@@ -1030,6 +1032,38 @@ textarea {
         width: 100%;
         height: 100%;
     }
+}
+
+.boton1{
+    text-decoration: none;
+    padding: 2%;
+    border-radius: 5%;
+    background-color: #c6937f;
+    box-sizing: border-box;
+    top: 0;
+    margin: 2%;
+    text-align: center;
+    border: solid 2px whitesmoke;
+    color: whitesmoke;
+    font-family: 'Anton', serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.boton1:hover{
+    background-color: #4d181d;
+}
+
+#valor{
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+}
+
+#titulo-valor{
+    
+    margin-bottom: 2%;
 }
 
 
